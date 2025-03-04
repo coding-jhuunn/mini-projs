@@ -1,0 +1,2 @@
+1. darkMode
+2. VUE TAILWIND CSS TO DO LIST
