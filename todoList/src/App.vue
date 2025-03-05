@@ -1,9 +1,11 @@
 <script setup>
 import MyHeader from "./components/MyHeader.vue";
+import MainContent from "./components/MainContent.vue";
 </script>
 
 <template>
   <div>
-    <MyHeader class="text-3xl"></MyHeader>
+    <MyHeader></MyHeader>
+    <MainContent></MainContent>
   </div>
 </template>
