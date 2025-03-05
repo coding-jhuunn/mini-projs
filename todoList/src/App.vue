@@ -4,6 +4,6 @@ import MyHeader from "./components/MyHeader.vue";
 
 <template>
   <div>
-    <MyHeader></MyHeader>
+    <MyHeader class="text-3xl"></MyHeader>
   </div>
 </template>
