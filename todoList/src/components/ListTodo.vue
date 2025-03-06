@@ -1,10 +1,16 @@
 <template>
   <div>
     <ItemTodo v-for="(list, index) in todoList" :key="index" :todoListProps="list"></ItemTodo>
+    <div>
+      <p>{{ message.title }}</p>
+    </div>
   </div>
 </template>
 <script setup>
 import ItemTodo from "./ItemTodo.vue";
+defineProps({
+  message: Object,
+});
 
 const todoList = [
   {

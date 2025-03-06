@@ -1,11 +1,18 @@
+<template>
+  <div>
+    <MyForm @submit-item="updateItem"></MyForm>
+    <ListTodo :message="messageFromA"></ListTodo>
+  </div>
+</template>
+
 <script setup>
 import MyForm from "./MyForm.vue";
 import ListTodo from "./ListTodo.vue";
-</script>
+import { ref } from "vue";
 
-<template>
-  <div>
-    <MyForm></MyForm>
-    <ListTodo></ListTodo>
-  </div>
-</template>
+const messageFromA = ref({});
+
+const updateItem = (msg) => {
+  messageFromA.value = msg;
+};
+</script>
